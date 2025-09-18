@@ -12,7 +12,7 @@ Hi, I’m **Haowen Si**, a master’s student in high-energy astrophysics at the
 Modern telescopes have revealed that nearly every galaxy hosts a supermassive black hole at its center — including our own. The Milky Way’s black hole, **Sgr A\***, is believed to have launched powerful jets millions of years ago, possibly producing the very high-energy particles we still detect today.  
 
 <figure>
-  <img src="/images/eso2208-eht-mwd.jpg" alt="Sgr A* observed by the EHT Collaboration" style="max-width:80%; display:block; margin:auto;">
+  <img src="/images/eso2208-eht-mwd.jpg" alt="Sgr A* observed by the EHT Collaboration" style="max-width:60%; display:block; margin:auto;">
   <figcaption style="text-align:center;">Image credit: EHT Collaboration</figcaption>
 </figure>
 
