@@ -1,16 +1,65 @@
 ---
 layout: archive
-title: "Talks and presentations"
-permalink: /talks/
+title: "Research Experience"
+permalink: /research/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+Research Experience
+======
 
-{% endif %}
+My research spans astrophysics and astroparticle physics, with projects ranging from **observational stellar activity surveys** to **plasma simulations of solar wind**, **dark matter experiments**, and now **multi-messenger jet modeling of Sgr A***. Below is an overview of my work, including context, methods, and outcomes.
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+---
+
+**Constraining Hadronic Processes in Past Sgr A* Jets**  
+*Supervisor: Sera Markoff | Tools: Python, BHJet/HADJet, ISIS, Gammapy*  
+*Amsterdam, Netherlands | Sep. 2025 – Present*  
+
+The Galactic Center harbors the nearest supermassive black hole, Sgr A*, which may have launched a powerful jet in the past. My master’s research aims to test whether this jet could have accelerated cosmic rays to very high energies and left signatures observable today.  
+
+- Building end-to-end lepto–hadronic models of past Sgr A* jet activity.  
+- Reproducing multi-wavelength baselines in ISIS and refining HADJet proton injection setups.  
+- Modeling cosmic-ray confinement and diffusion in the Central Molecular Zone.  
+- Folding outputs through CTA and KM3NeT instrument responses to forecast detectable γ-ray and neutrino signatures.  
+
+---
+
+**XENONnT Experiment: Dark Matter & Detector Calibration**  
+*Supervisor: Jingqiang Ye | Tools: Python, Data Pipelines, Correction Algorithms*  
+*Shenzhen, China | Feb. 2024 – Sep. 2024*  
+
+The XENONnT experiment is one of the world’s leading direct searches for dark matter using a dual-phase liquid xenon detector. My work focused on calibration and the reduction of systematic uncertainties that affect sensitivity at low energies.  
+
+- Conducted detector calibration with Krypton-83m injections to monitor xenon purity, drift fields, and PMT stability.  
+- Analyzed light and charge yield variations to ensure consistent signal reconstruction.  
+- Developed a correction algorithm for false photoionization events, improving low-energy sensitivity.  
+- Identified a detector artifact that mimicked neutrino magnetic moment signals, helping to reduce systematic errors in rare-event searches.  
+
+---
+
+**MHD Simulation: Tracing Alfvén Waves in Solar Wind**  
+*Supervisor: Xin Cheng | Tools: Python, MPI-AMRVAC, Fortran, Bash*  
+*Nanjing, China | July 2023 – Sep. 2023*  
+
+Alfvén waves play a key role in solar wind heating and energy transport. I worked on setting up numerical simulations to trace their propagation and interactions with the solar magnetic field.  
+
+- Implemented a 1D diffusion simulation of Alfvén wave propagation using MPI-AMRVAC.  
+- Configured computational grids, solvers, and boundary conditions to study wave transport and damping.  
+- Explored challenges such as dispersion, damping, and numerical stability in plasma modeling.  
+- Built a foundation for future extensions to higher-dimensional plasma simulations.  
+
+---
+
+**LAMOST Survey: Stellar Activity & Spectral Variations**  
+*Supervisor: Pengfei Chen | Tools: Python, FITS, K-means clustering, correlation analysis*  
+*Nanjing, China | June 2021 – Aug. 2021*  
+
+Solar-like stars exhibit magnetic activity that leaves clear spectral fingerprints. Using LAMOST survey data, I studied how activity manifests in H-alpha and Fe lines and what stellar properties drive variability.  
+
+- Processed large samples of stellar spectra to detect activity-related variability.  
+- Applied unsupervised machine learning (K-means) to identify anomalies and cluster activity signatures.  
+- Found activity to be more common in stars with lower surface gravity and higher radial velocity, but not correlated with metallicity.  
+- Gained practical experience with spectroscopic data reduction, stellar diagnostics, and statistical treatment of observational data.  
