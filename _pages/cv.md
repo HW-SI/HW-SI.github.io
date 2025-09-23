@@ -11,19 +11,6 @@ redirect_from:
 
 [📄 **Download my CV (PDF)**](/files/CV_HWSI.pdf){:target="_blank" .btn .btn-primary}
 
----
-layout: archive
-title: "CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
----
-
-{% include base_path %}
-
-[📄 **Download my CV (PDF)**]({{ base_path }}/assets/files/Haowen_Si_CV.pdf){:target="_blank"}
-
 Education
 ======
 * **M.Sc. Physics & Astronomy (Astronomy & Astrophysics Track)**  
