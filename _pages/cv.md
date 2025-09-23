@@ -20,27 +20,6 @@ Education
   *Extensive coursework in theoretical and applied physics, including Quantum Mechanics, Classical Mechanics, Thermodynamics, Electrodynamics, and Fluid Mechanics.*  
   *Conducted research in Astroparticle Physics under Prof. Jingqiang Ye (XENON Collaboration).*  
 
-* **Exchange Program in Physics**  
-  University of Melbourne, Feb. 2023 – June 2023  
-  *Coursework in Astrophysics, Optics, Computational Physics.*  
-
-Work Experience
-======
-* **Feb. 2024 – Sep. 2024: Research Assistant**  
-  XENONnT Experiment, Shenzhen, China  
-  * Focused on detector calibration and low-energy event analysis in the XENONnT dark matter experiment.  
-  * Supervisor: Jingqiang Ye  
-
-* **July 2023 – Sep. 2023: Research Intern**  
-  Solar Physics Group, Nanjing University, Nanjing, China  
-  * Conducted MHD simulations of Alfvén wave propagation using MPI-AMRVAC.  
-  * Supervisor: Xin Cheng  
-
-* **June 2021 – Aug. 2021: Research Intern**  
-  LAMOST Survey Group, Nanjing, China  
-  * Analyzed stellar activity and spectral variability in solar-type stars using LAMOST data.  
-  * Supervisor: Pengfei Chen
-
 Skills
 ======
 * **Programming Languages:** Python, C++, Fortran (basic), Bash scripting, Julia (basic), MATLAB (basic)  
