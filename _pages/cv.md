@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[📄 **Download my CV (PDF)**](/files/CV_HWSI.pdf){:target="_blank" .btn .btn-primary}
+
 Education
 ======
 * **M.Sc. in Physics and Astronomy (Astronomy and Astrophysics Track)**  
