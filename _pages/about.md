@@ -22,5 +22,3 @@ My current project aims to build a complete framework tracing this process: from
   <img src="/images/jet.jpg" alt="Hubble image of jet" width="80%">
   <figcaption><em>Credit: Hubble Space Telescope</em></figcaption>
 </figure>
-
-Beyond extreme astrophysics, I have explored diverse topics — from coding theory to machine learning, from solar physics to dark matter — and I am always happy to discuss ideas across these areas.  
