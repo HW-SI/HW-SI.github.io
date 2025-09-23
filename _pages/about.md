@@ -19,7 +19,7 @@ Modern telescopes have revealed that nearly every galaxy hosts a supermassive bl
 My current project aims to build a complete framework tracing this process: from the birth of these particles near the black hole, through their escape into the tangled magnetic fields of the Galactic Center, to their eventual detection on Earth. This work seeks to deepen our understanding of how jets accelerate particles and to shed light on the “ghost” particles arriving at our detectors today.  
 
 <figure style="text-align: center;">
-  <img src="jet.jpg.webp" alt="Hubble image of jet" width="80%">
+  <img src="jet.jpg" alt="Hubble image of jet" width="80%">
   <figcaption><em>Credit: Hubble Space Telescope</em></figcaption>
 </figure>
 
