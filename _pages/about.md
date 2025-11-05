@@ -14,7 +14,7 @@ My current focus is on **microquasars**—stellar-mass black holes with relativi
 <figure style="text-align: center;">
   <!-- Replace the src path below with your actual file name, e.g. /images/v4641.jpg -->
   <img src="/images/V4641.jpg" alt="V4641 Sgr" width="80%">
-  <figcaption><em>V4641 Sgr — a microquasar used to probe jet acceleration and jet–medium interaction. Credit: your image</em></figcaption>
+  <figcaption><em>V4641 Sgr — a microquasar used to probe jet acceleration and jet–medium interaction. Credit: StarDate</em></figcaption>
 </figure>
 
 The past jet of Sgr A* also appears here as a **reference SMBH source** to give context across mass scales.
