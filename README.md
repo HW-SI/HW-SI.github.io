@@ -2,15 +2,16 @@
 
 This repository contains the source for my personal academic website: https://hw-si.github.io.
 
-The visible site is now a custom static HTML/CSS GitHub Pages site. It presents my current work in high-energy astrophysics, black-hole jet modeling, microquasars, multi-messenger predictions, and previous research experience in dark matter searches, solar-wind MHD, and stellar spectroscopy.
+The visible site is now a custom static HTML/CSS GitHub Pages site. The design uses a full-width academic hero and compact two-column research layout inspired by Oliver Porth's academic site, while keeping the content focused on my personal research profile.
 
 ## Site Structure
 
 The public website is intentionally small:
 
-- `index.html` - home page, research focus, current project, modeling context, and contact
+- `index.html` - home page, full-width hero, current research feature, sidebar links, and contact
+- `news/index.html` - selected research notes, group-style writing, and short updates
 - `research/index.html` - current and previous research project descriptions
-- `blog/index.html` - blog landing page for group posts, research notes, and updates
+- `blog/index.html` - redirect to `news/index.html` for old links
 - `cv/index.html` - CV summary and PDF link
 - `assets/css/site.css` - custom site styling inspired by compact academic research pages
 - `files/CV_HWSI.pdf` - downloadable CV
@@ -22,13 +23,13 @@ The public website is intentionally small:
 
 Use the static HTML files for page content and `assets/css/site.css` for styling. The top navigation is repeated in each page, so update all pages if the navigation changes.
 
-## Blog Posts
+## News Posts
 
-For now, the blog page is a static landing page. When posts are ready, add each post as a static HTML file under `blog/` and link it from `blog/index.html` and the homepage blog section.
+For now, the news page is a static landing page. When posts are ready, add each post as a static HTML file under `news/` and link it from `news/index.html` and the homepage News sidebar.
 
 ## Figures
 
-Current pages use original schematic artwork in `images/` for the homepage, research page, and blog header:
+Current pages use original schematic artwork in `images/` for the homepage, research page, and news header:
 
 - `microquasar-hero.png`
 - `jet-medium-interaction.png`
