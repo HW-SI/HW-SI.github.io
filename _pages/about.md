@@ -12,7 +12,6 @@ Hi, I’m **Haowen Si**, a Master’s student in Astrophysics at the University 
 My current focus is on **microquasars**—stellar-mass black holes with relativistic jets—using nearby sources such as **V4641 Sgr** as time-resolvable laboratories for jet physics. The core questions are the same ones I care about across systems: **how particles are accelerated in jets** and **how jets couple to their surrounding medium**, shaping the gamma-ray and neutrino emission we can detect.
 
 <figure style="text-align: center;">
-  <!-- Replace the src path below with your actual file name, e.g. /images/v4641.jpg -->
   <img src="/images/V4641.jpg" alt="V4641 Sgr" width="80%">
   <figcaption><em>V4641 Sgr — a microquasar used to probe jet acceleration and jet–medium interaction. Credit: StarDate</em></figcaption>
 </figure>

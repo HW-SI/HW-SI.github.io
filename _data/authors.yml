@@ -1,18 +1,11 @@
-# Authors
+# Optional author records for posts or collection items.
+# The active sidebar profile is configured in _config.yml under `author`.
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Haowen Si:
+  name   : "Haowen Si"
+  uri    : "https://hw-si.github.io"
+  email  : "haowen.si@student.uva.nl"
+  bio    : "Master's student in Astronomy and Astrophysics"
+  avatar : "profile.png"
+  github : "HW-SI"
+  orcid  : "https://orcid.org/0009-0009-2847-5175"
