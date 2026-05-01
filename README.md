@@ -15,7 +15,7 @@ The public website is intentionally small:
 - `_pages/sitemap.md` - generated sitemap page
 - `_pages/tag-archive.html` and `_pages/category-archive.html` - lightweight archives for future blog posts
 - `files/CV_HWSI.pdf` - downloadable CV
-- `images/` - profile and research images used by the pages
+- `images/` - profile images, research images, and original schematic artwork used by the pages
 
 The original AcademicPages demo pages, posts, talks, teaching entries, portfolio entries, and sample publication files have been removed so the repository reflects the actual website rather than the template.
 
@@ -51,7 +51,15 @@ Post body.
 
 ## Figures
 
-Current pages use the existing credited research images in `images/`. See `FIGURE_PROMPTS.md` for suggested prompts if you want to generate original schematic-style figures later.
+Current pages use original schematic artwork in `images/` for the homepage, research page, and blog header:
+
+- `microquasar-hero.png`
+- `jet-medium-interaction.png`
+- `multimessenger-pipeline.png`
+- `microquasar-smbh-comparison.png`
+- `blog-research-notes-header.png`
+
+See `FIGURE_PROMPTS.md` for the prompts and quality criteria used to generate or refine these figures.
 
 ## Running Locally
 

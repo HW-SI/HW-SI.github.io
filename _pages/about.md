@@ -18,6 +18,11 @@ redirect_from:
   </div>
 </div>
 
+<figure class="site-wide-figure site-hero-figure">
+  <img src="/images/microquasar-hero.png" alt="Artist impression of a microquasar with mass transfer, accretion disk, and relativistic jets">
+  <figcaption><em>Original artist's impression of a microquasar: mass transfer onto a stellar-mass black hole powers an accretion disk and relativistic jets.</em></figcaption>
+</figure>
+
 <section class="site-section">
   <h2>Research Focus</h2>
   <p>My current focus is on <strong>microquasars</strong>, stellar-mass black holes with relativistic jets, using nearby sources such as <strong>V4641 Sgr</strong> as time-resolvable laboratories for jet physics. The core questions are how particles are accelerated in jets and how jets couple to their surrounding medium, shaping the gamma-ray and neutrino emission we can detect.</p>
@@ -51,15 +56,16 @@ redirect_from:
 </section>
 
 <section class="site-section">
-  <h2>Visual Context</h2>
+  <h2>Modeling Context</h2>
+  <figure class="site-wide-figure">
+    <img src="/images/multimessenger-pipeline.png" alt="Schematic multi-messenger workflow from jet emission to transport and detector-space predictions">
+    <figcaption><em>Original schematic workflow connecting compact-object jet emission, jet-medium interaction, particle transport, and detector-space predictions.</em></figcaption>
+  </figure>
+
   <div class="site-figure-grid">
     <figure>
-      <img src="/images/V4641.jpg" alt="V4641 Sgr">
-      <figcaption><em>V4641 Sgr, a microquasar used to probe jet acceleration and jet-medium interaction. Credit: StarDate.</em></figcaption>
-    </figure>
-    <figure>
-      <img src="/images/jet.jpg" alt="Astrophysical jet interacting with surrounding medium">
-      <figcaption><em>Jet-medium interaction: where acceleration, shocks, and transport imprint observable multi-messenger signatures.</em></figcaption>
+      <img src="/images/microquasar-smbh-comparison.png" alt="Schematic comparison between a microquasar and a supermassive black-hole accretion system">
+      <figcaption><em>Original comparison schematic showing related jet-launching physics across stellar-mass and supermassive black-hole systems.</em></figcaption>
     </figure>
   </div>
 </section>
