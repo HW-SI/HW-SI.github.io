@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="site-callout">
+  <p>Short research notes, group posts, and selected updates will appear here.</p>
+</div>
+
+{% if site.posts.size > 0 %}
+  <ul class="site-post-list site-post-list--large">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span>{{ post.date | date: "%d %b %Y" }}</span>
+      {% if post.excerpt %}<p>{{ post.excerpt | markdownify | strip_html | truncate: 220 }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="site-muted">No blog posts are published yet.</p>
+{% endif %}

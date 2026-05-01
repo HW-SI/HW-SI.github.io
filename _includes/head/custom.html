@@ -24,6 +24,222 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<style>
+:root {
+  --site-ink: #1f2933;
+  --site-muted: #5f6c72;
+  --site-accent: #00747f;
+  --site-accent-dark: #004f59;
+  --site-panel: #f5f7f7;
+  --site-line: #d8e0e3;
+}
+
+body {
+  background: #ffffff;
+  color: var(--site-ink);
+}
+
+.masthead {
+  background: #ffffff;
+  border-bottom: 1px solid var(--site-line);
+}
+
+.greedy-nav,
+.greedy-nav .hidden-links {
+  background: #ffffff;
+}
+
+.greedy-nav a.site-title {
+  color: var(--site-ink);
+  font-weight: 700;
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--site-accent);
+}
+
+.page__content a:not(.btn),
+.archive a:not(.btn) {
+  color: var(--site-accent-dark);
+}
+
+.page__title,
+.archive .page__title {
+  color: var(--site-ink);
+}
+
+.page__content h2,
+.archive h2 {
+  border-bottom: 1px solid var(--site-line);
+  color: var(--site-ink);
+  padding-bottom: 0.35rem;
+}
+
+.site-hero {
+  background: var(--site-panel);
+  border-bottom: 1px solid var(--site-line);
+  border-top: 4px solid var(--site-accent);
+  margin: 0 0 1.8rem;
+  padding: 1.6rem 1.4rem;
+}
+
+.site-hero h1 {
+  color: var(--site-ink);
+  font-size: 2.15rem;
+  line-height: 1.1;
+  margin: 0.15rem 0 0.65rem;
+}
+
+.site-eyebrow {
+  color: var(--site-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.site-lead {
+  color: var(--site-ink);
+  font-size: 1.08rem;
+  margin-bottom: 1rem;
+}
+
+.site-actions .btn,
+.site-callout .btn {
+  border-radius: 4px;
+  margin: 0.25rem 0.4rem 0.25rem 0;
+}
+
+.site-actions .btn:first-child,
+.site-callout .btn {
+  background: var(--site-accent-dark);
+  color: #ffffff;
+}
+
+.site-section {
+  margin: 2rem 0;
+}
+
+.site-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1rem;
+}
+
+.site-card,
+.site-project-list article,
+.site-callout {
+  background: #ffffff;
+  border: 1px solid var(--site-line);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.site-card h3,
+.site-project-list h3 {
+  margin-top: 0;
+}
+
+.site-callout {
+  background: var(--site-panel);
+  border-left: 4px solid var(--site-accent);
+}
+
+.site-list li {
+  margin-bottom: 0.45rem;
+}
+
+.site-figure-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.site-figure-grid figure,
+.site-wide-figure,
+.site-project-list figure {
+  margin: 1rem 0;
+}
+
+.site-figure-grid img,
+.site-wide-figure img,
+.site-project-list img {
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.site-figure-grid figcaption,
+.site-wide-figure figcaption,
+.site-project-list figcaption {
+  color: var(--site-muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  margin-top: 0.45rem;
+  text-align: center;
+}
+
+.site-project-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.site-project-list--compact article {
+  padding: 0.85rem 1rem;
+}
+
+.site-post-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.site-post-list li {
+  border-bottom: 1px solid var(--site-line);
+  padding: 0.75rem 0;
+}
+
+.site-post-list a {
+  font-weight: 700;
+}
+
+.site-post-list span {
+  color: var(--site-muted);
+  display: block;
+  font-size: 0.82rem;
+  margin-top: 0.15rem;
+}
+
+.site-post-list--large li {
+  padding: 1rem 0;
+}
+
+.site-muted {
+  color: var(--site-muted);
+}
+
+.sidebar .author__name {
+  color: var(--site-ink);
+}
+
+.sidebar .author__bio {
+  color: var(--site-muted);
+}
+
+@media (max-width: 600px) {
+  .site-hero {
+    padding: 1.2rem 1rem;
+  }
+
+  .site-hero h1 {
+    font-size: 1.75rem;
+  }
+}
+</style>
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
