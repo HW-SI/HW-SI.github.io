@@ -2,7 +2,7 @@
 
 This repository contains the source for my personal academic website: https://hw-si.github.io.
 
-The visible site is now a custom static HTML/CSS GitHub Pages site. The design uses a full-width academic hero and compact two-column research layout inspired by Oliver Porth's academic site, while keeping the content focused on my personal research profile.
+The visible site is now a custom static HTML/CSS GitHub Pages site. The design uses a full-width academic hero and compact two-column research layout inspired by Oliver Porth's academic site, with typography, spacing, and color refined toward a quiet Apple-like scientific interface.
 
 ## Site Structure
 
