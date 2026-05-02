@@ -10,8 +10,9 @@ The public website is intentionally small:
 
 - `index.html` - home page, full-width hero, current research feature, sidebar links, and contact
 - `news/index.html` - selected research notes, group-style writing, and short updates
+- `news/cosmic-rays-coffee/index.html` - first research note: "Could Cosmic Rays Power My Coffee Machine?"
 - `research/index.html` - current and previous research project descriptions
-- `blog/index.html` - redirect to `news/index.html` for old links
+- `blog/index.html` and `blog/cosmic-rays-coffee/index.html` - redirects to News for old blog-style links
 - `cv/index.html` - CV summary and PDF link
 - `assets/css/site.css` - custom site styling inspired by compact academic research pages
 - `files/CV_HWSI.pdf` - downloadable CV
@@ -36,6 +37,7 @@ Current pages use original schematic artwork in `images/` for the homepage, rese
 - `multimessenger-pipeline.png`
 - `microquasar-smbh-comparison.png`
 - `blog-research-notes-header.png`
+- `blog-coffee.png`
 
 See `FIGURE_PROMPTS.md` for the prompts and quality criteria used to generate or refine these figures.
 
