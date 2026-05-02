@@ -27,7 +27,7 @@ html {
 body {
   background: #fbfbfd;
   color: var(--body);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.7;
   margin: 0;
@@ -67,14 +67,14 @@ img {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
-  padding: 0 1.05rem;
+  min-height: 64px;
+  padding: 0 1.3rem;
 }
 
 .brand {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 650;
+  color: #50565d;
+  font-size: 1.05rem;
+  font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
@@ -83,13 +83,14 @@ img {
 .nav-links {
   align-items: center;
   display: flex;
-  gap: 1.1rem;
+  gap: 1.25rem;
   justify-content: flex-end;
 }
 
 .nav-links a {
   color: #51565c;
-  font-size: 0.84rem;
+  font-size: 0.96rem;
+  font-weight: 560;
   line-height: 1;
   text-decoration: none;
 }
@@ -103,7 +104,7 @@ img {
   background: var(--accent);
   border-radius: 8px;
   color: #ffffff;
-  padding: 0.52rem 0.82rem;
+  padding: 0.68rem 0.95rem;
   text-transform: uppercase;
 }
 
@@ -122,7 +123,9 @@ img {
   border-bottom: 1px solid var(--line);
   color: #ffffff;
   display: flex;
-  min-height: 720px;
+  height: 68vh;
+  max-height: 900px;
+  min-height: 760px;
   position: relative;
   text-align: center;
 }
@@ -149,17 +152,18 @@ img {
 .hero-kicker,
 .eyebrow {
   color: rgba(255, 255, 255, 0.82);
-  font-size: 0.78rem;
-  font-weight: 650;
+  font-size: 0.98rem;
+  font-weight: 700;
   line-height: 1.45;
-  margin: 0 0 1.05rem;
+  margin: 0 0 1.2rem;
   text-transform: uppercase;
 }
 
 .hero-inner h1 {
   color: #ffffff;
-  font-size: 4.45rem;
-  font-weight: 520;
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-size: 4.85rem;
+  font-weight: 540;
   line-height: 1.05;
   margin: 0 0 1.05rem;
   text-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
@@ -168,13 +172,13 @@ img {
 
 .hero-title-note {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.3rem;
+  font-size: 1.38rem;
   margin: 0 0 0.5rem;
 }
 
 .hero-subline {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.02rem;
+  font-size: 1.08rem;
   margin: 0;
 }
 
@@ -383,6 +387,29 @@ img {
 .meta {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.field-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.field-links a {
+  background: rgba(0, 102, 204, 0.06);
+  border: 1px solid rgba(0, 102, 204, 0.16);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  line-height: 1;
+  padding: 0.42rem 0.56rem;
+  text-decoration: none;
+}
+
+.field-links a:hover {
+  background: rgba(0, 102, 204, 0.11);
+  color: var(--link);
 }
 
 .inline-links {
@@ -605,7 +632,8 @@ img {
   }
 
   .home-hero {
-    min-height: 620px;
+    height: auto;
+    min-height: 660px;
   }
 }
 
@@ -615,7 +643,7 @@ img {
   }
 
   .brand {
-    font-size: 0.92rem;
+    font-size: 0.96rem;
   }
 
   .nav-links {
@@ -631,11 +659,11 @@ img {
   }
 
   .home-hero {
-    min-height: 560px;
+    min-height: 620px;
   }
 
   .hero-inner h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .hero-title-note {
