@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f151b">
+  <title>Leptons or Hadrons? What Powers V4641 Sgr at Very High Energies | Haowen Si</title>
+  <meta name="description" content="NAC 2026 web companion research note on compact jet modelling and source-term interpretation for V4641 Sgr.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/">Black-hole Jets and Multi-messenger Astrophysics</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/news/" aria-current="page">News</a>
+        <a href="/research/">Research</a>
+        <a href="/cv/">CV</a>
+        <a href="/#contact">Contact</a>
+        <a class="nav-button" href="https://seramarkoff.com" target="_blank" rel="noopener">Group</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <div class="content-wrap two-column">
+      <article class="post-article">
+        <p class="page-kicker">Research Notes</p>
+        <h1 class="page-title">Leptons or Hadrons? What Powers V4641 Sgr at Very High Energies</h1>
+        <p class="post-meta">9 May 2026 | NAC 2026 web companion | Compact jet modelling and source-term interpretation</p>
+
+        <div class="callout">
+          <p><strong>Short version.</strong> Compact BHJet/HADJet fits provide jet-power and particle-injection priors for V4641 Sgr, but the literal compact particle distributions only reach GeV to tens-of-GeV energies. The observed TeV-PeV gamma-ray halo must therefore be tested with escaped high-energy tails, downstream acceleration, and large-scale propagation beyond the compact jet model itself.</p>
+        </div>
+
+        <div class="stat-grid" aria-label="Source facts">
+          <div class="stat-card">
+            <strong>V4641 Sgr</strong>
+            <span>Transient black-hole X-ray binary / microquasar.</span>
+          </div>
+          <div class="stat-card">
+            <strong>6.2 kpc</strong>
+            <span>Distance used in this modelling note.</span>
+          </div>
+          <div class="stat-card">
+            <strong>6.4 M_sun</strong>
+            <span>Black-hole mass used here.</span>
+          </div>
+          <div class="stat-card">
+            <strong>TeV-PeV</strong>
+            <span>Gamma-ray halo context from HAWC, H.E.S.S., and LHAASO.</span>
+          </div>
+        </div>
+
+        <div class="post-body">
+          <h2>Motivation</h2>
+          <p>Cosmic rays are a major non-photonic astronomical messenger. A central feature in the all-particle cosmic-ray spectrum is the knee near <code>~3 PeV</code>, where either Galactic accelerators begin to run out of power or Galactic confinement becomes inefficient. The source classes that dominate around this energy remain uncertain.</p>
+          <figure class="post-hero">
+            <img src="/images/v4641-nac-2026/cr-spectrum-2020.png" alt="Cosmic-ray spectrum showing the PeV knee">
+            <figcaption>Cosmic-ray spectrum with the knee near PeV energies. Figure by Carmelo Evoli, Zenodo DOI 10.5281/zenodo.4396125.</figcaption>
+          </figure>
+          <p>Recent detections of very-high-energy gamma rays from jetted black-hole X-ray binaries have made microquasars possible Galactic PeVatron candidates. V4641 Sgr is a demanding test case because the reported gamma-ray emission is hard, extended, and reaches hundreds of TeV, while the surrounding medium appears low-density.</p>
+
+          <h2>Question</h2>
+          <p>The current project asks whether compact jet modelling can supply the particle content and energy budget required for the observed very-high-energy and ultra-high-energy gamma-ray halo.</p>
+          <p>Two semi-analytical compact jet model families are used:</p>
+          <ul class="simple-list">
+            <li><strong>BHJet:</strong> a leptonic compact jet baseline.</li>
+            <li><strong>HADJet:</strong> a lepto-hadronic compact jet model including non-thermal protons and hadronic channels.</li>
+          </ul>
+          <p>The compact models calibrate the central engine. They are not assumed to be the final extended halo solution.</p>
+
+          <h2>Workflow</h2>
+          <ol class="step-list">
+            <li><strong>Multi-wavelength data selection:</strong> build quasi-simultaneous radio, optical/NIR, and RXTE SEDs for 1999 and 2003.</li>
+            <li><strong>Compact jet SED fits:</strong> fit BHJet and HADJet models for each epoch.</li>
+            <li><strong>Source-term extraction:</strong> translate fit outputs into jet power, geometry, and electron/proton source terms.</li>
+            <li><strong>Propagation tests:</strong> test literal compact spectra, then escaped TeV-PeV electron/proton tails.</li>
+            <li><strong>Detector-space comparison:</strong> compare to H.E.S.S., HAWC, and LHAASO, then forecast CTA and KM3NeT.</li>
+          </ol>
+          <p>As of 9 May 2026, the propagation and detector-space comparison remain the next stage rather than a completed fit to H.E.S.S./HAWC/LHAASO.</p>
+
+          <h2>Data selection</h2>
+          <p>Two representative activity states are used so that the model comparison spans both a powerful outburst-like case and a cleaner hard/active-state case.</p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>State</th>
+                  <th>Why selected</th>
+                  <th>Multi-wavelength inputs</th>
+                  <th>Current caveat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1999 outburst</strong></td>
+                  <td>Rare, powerful bright event; tests whether major ejections can supply large energy.</td>
+                  <td>Radio: GBI/VLA. Optical/NIR: VSNET, NTT, Chaty data. X-ray: RXTE near MJD 51436.895.</td>
+                  <td>Radio, optical, and X-ray points are not perfectly simultaneous; optical extinction remains an important uncertainty.</td>
+                </tr>
+                <tr>
+                  <td><strong>2003 hard/active mini-flare</strong></td>
+                  <td>Cleaner recurrent hard/active-state candidate and current preferred modelling path.</td>
+                  <td>Radio: VLA midpoint decay estimate. Optical: SMARTS/Uemura/Maitra. X-ray: RXTE dwell 2 near MJD 52857.385574.</td>
+                  <td>Radio flux at the X-ray midpoint is modelled; X-ray background treatment still deserves expert checking.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="figure-grid">
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/1999-mwl-selected-inputs.png" alt="1999 selected multi-wavelength inputs for V4641 Sgr">
+              <figcaption>1999 selected multi-wavelength inputs.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/2003-mwl-selected-inputs.png" alt="2003 selected multi-wavelength inputs for V4641 Sgr">
+              <figcaption>2003 selected multi-wavelength inputs.</figcaption>
+            </figure>
+          </div>
+
+          <h2>Compact jet fits</h2>
+          <p>The four current branches compare a leptonic baseline and a lepto-hadronic alternative in both representative states.</p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Quantity</th>
+                  <th>1999 BHJet</th>
+                  <th>1999 HADJet</th>
+                  <th>2003 BHJet</th>
+                  <th>2003 HADJet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Physics branch</td>
+                  <td>Leptonic</td>
+                  <td>Lepto-hadronic</td>
+                  <td>Leptonic</td>
+                  <td>Lepto-hadronic</td>
+                </tr>
+                <tr>
+                  <td>Reduced chi-square</td>
+                  <td>26.85</td>
+                  <td>21.66</td>
+                  <td>8.89</td>
+                  <td>~14.8</td>
+                </tr>
+                <tr>
+                  <td>P_jet</td>
+                  <td>1.25e37 erg s^-1</td>
+                  <td>9.75e37 erg s^-1</td>
+                  <td>4.84e36 erg s^-1</td>
+                  <td>1.54e38 erg s^-1</td>
+                </tr>
+                <tr>
+                  <td>r_0</td>
+                  <td>5.5 r_g</td>
+                  <td>2.63 r_g</td>
+                  <td>33 r_g</td>
+                  <td>4.7 r_g</td>
+                </tr>
+                <tr>
+                  <td>z_diss / z_acc</td>
+                  <td>200 / 2000 r_g</td>
+                  <td>200 / 2000 r_g</td>
+                  <td>1000 / 2000 r_g</td>
+                  <td>1000 / 2000 r_g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="fit-grid">
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/v4641-1999-bhjet-leptonic-sed.png" alt="1999 BHJet leptonic SED fit for V4641 Sgr">
+              <figcaption>1999 outburst, BHJet leptonic compact jet baseline.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/v4641-1999-hadjet-hadronic-sed.png" alt="1999 HADJet lepto-hadronic SED fit for V4641 Sgr">
+              <figcaption>1999 outburst, HADJet lepto-hadronic alternative.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/v4641-2003-bhjet-leptonic-sed.png" alt="2003 BHJet leptonic SED fit for V4641 Sgr">
+              <figcaption>2003 hard/active state, BHJet leptonic baseline.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="/images/v4641-nac-2026/v4641-2003-hadjet-hadronic-sed.png" alt="2003 HADJet lepto-hadronic SED fit for V4641 Sgr">
+              <figcaption>2003 hard/active state, HADJet lepto-hadronic alternative.</figcaption>
+            </figure>
+          </div>
+
+          <h2>Source-term interpretation</h2>
+          <p>The compact model outputs are translated into source-term anchors for propagation work. The key scale mismatch is that the compact particle distributions reach GeV to tens-of-GeV energies, while the observed gamma-ray halo requires TeV-PeV parent particles.</p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Branch</th>
+                  <th>Power anchor</th>
+                  <th>Literal compact particle ceiling</th>
+                  <th>Direct TeV-PeV halo source?</th>
+                  <th>Propagation role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1999 BHJet</td>
+                  <td>1.25e37 erg s^-1</td>
+                  <td>E_e,max ~1.5 GeV</td>
+                  <td>No</td>
+                  <td>Outburst leptonic baseline</td>
+                </tr>
+                <tr>
+                  <td>2003 BHJet</td>
+                  <td>4.84e36 erg s^-1</td>
+                  <td>E_e,max ~1.2 GeV</td>
+                  <td>No</td>
+                  <td>Conservative hard-state baseline</td>
+                </tr>
+                <tr>
+                  <td>1999 HADJet</td>
+                  <td>9.75e37 erg s^-1</td>
+                  <td>E_e,max ~20 GeV; E_p,max ~97 GeV</td>
+                  <td>No</td>
+                  <td>High-power mixed outburst</td>
+                </tr>
+                <tr>
+                  <td>2003 HADJet</td>
+                  <td>1.54e38 erg s^-1</td>
+                  <td>E_e,max ~9 GeV; E_p,max ~21 GeV</td>
+                  <td>No</td>
+                  <td>High-power hard-state alternative</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Current interpretation</h2>
+          <p>The leptonic BHJet fits provide a compact baseline for radio-to-X-ray emission, but a leptonic explanation of the gamma-ray halo requires an additional large-scale mechanism: escaped high-energy electron tails, fast transport, low magnetic field, or distributed acceleration.</p>
+          <p>The HADJet branches increase the available mechanical power and introduce proton content, but their literal compact proton ceilings are still far below TeV-PeV parent energies. A hadronic explanation therefore also needs an escaped or reaccelerated proton population, and the low gas-density constraint makes pure pp emission energetically demanding.</p>
+          <div class="callout">
+            <p><strong>Working conclusion.</strong> V4641 Sgr points to a two-stage problem: compact jet power and particle injection first, then large-scale acceleration, escape, and propagation.</p>
+          </div>
+
+          <h2>Next tests</h2>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Test</th>
+                  <th>Source term</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A</td>
+                  <td>Literal compact BHJet electrons</td>
+                  <td>Negative control: should fail at TeV-PeV.</td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>Literal compact HADJet proton diagnostics</td>
+                  <td>Negative control: should fail at ultra-high energies.</td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>PeV electron tail normalized by eta_e P_jet</td>
+                  <td>Test inverse-Compton viability and magnetic-field constraints.</td>
+                </tr>
+                <tr>
+                  <td>D</td>
+                  <td>PeV proton tail normalized by eta_p P_jet</td>
+                  <td>Test pp viability under low gas density.</td>
+                </tr>
+                <tr>
+                  <td>E</td>
+                  <td>Hybrid electron plus proton tail</td>
+                  <td>Test mixed scenarios after single-channel limits.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Future detector-space comparison should include the H.E.S.S. spectrum and morphology, HAWC high-energy constraints, the LHAASO ultra-high-energy spectrum, CTA forecasts, and KM3NeT/IceCube neutrino expectations for hadronic branches.</p>
+
+          <div class="source-list">
+            <p><strong>Figure and paper context:</strong> cosmic-ray spectrum by Carmelo Evoli, <a href="https://doi.org/10.5281/zenodo.4396125" target="_blank" rel="noopener">Zenodo DOI 10.5281/zenodo.4396125</a>. Gamma-ray context from HAWC/Nature 2024, <a href="https://doi.org/10.1038/s41586-024-07995-9" target="_blank" rel="noopener">DOI 10.1038/s41586-024-07995-9</a>; H.E.S.S./A&amp;A 2026, <a href="https://doi.org/10.1051/0004-6361/202557532" target="_blank" rel="noopener">DOI 10.1051/0004-6361/202557532</a>; and LHAASO/NSR 2025, <a href="https://doi.org/10.1093/nsr/nwaf496" target="_blank" rel="noopener">DOI 10.1093/nsr/nwaf496</a>.</p>
+            <p>The compact SED panels and multi-wavelength selection figures are produced from the V4641 Sgr modelling workflow used in this project.</p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="sidebar" aria-label="Article sidebar">
+        <section class="side-panel">
+          <h2>Page Status</h2>
+          <ul class="compact-list">
+            <li>
+              <strong>Research notes</strong>
+              <span>NAC 2026 web companion for poster readers.</span>
+            </li>
+            <li>
+              <strong>Public URL</strong>
+              <span>https://hw-si.github.io/news/v4641-sgr-nac-2026/</span>
+            </li>
+            <li>
+              <strong>QR target</strong>
+              <span>Use the public URL above for the final poster QR code.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="side-panel">
+          <h2>What Is Not Claimed</h2>
+          <ul class="compact-list">
+            <li>
+              <strong>No final halo fit yet</strong>
+              <span>Propagation and detector-space comparison are the next stage.</span>
+            </li>
+            <li>
+              <strong>No direct compact PeVatron claim</strong>
+              <span>The compact particle distributions do not literally reach TeV-PeV energies.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="side-panel">
+          <h2>Related</h2>
+          <ul class="compact-list">
+            <li><a href="/research/">Research page</a></li>
+            <li><a href="/news/">All news and notes</a></li>
+            <li><a href="/news/cosmic-rays-coffee/">Cosmic rays and coffee</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content-wrap">Copyright 2026 Haowen Si. Built as a static GitHub Pages site.</div>
+  </footer>
+</body>
+</html>

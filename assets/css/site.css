@@ -586,6 +586,112 @@ img {
   color: var(--ink);
 }
 
+.post-body table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 1.2rem 0 1.6rem;
+  width: 100%;
+}
+
+.post-body th,
+.post-body td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.72rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.post-body th {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.callout {
+  background: linear-gradient(180deg, #f5f8fb 0%, #eef3f7 100%);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  margin: 1.4rem 0;
+  padding: 1rem 1.1rem;
+}
+
+.stat-grid,
+.figure-grid,
+.fit-grid {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1.4rem 0;
+}
+
+.stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 1.12rem;
+}
+
+.stat-card span {
+  color: var(--muted);
+  display: block;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin-top: 0.35rem;
+}
+
+.figure-grid,
+.fit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fit-grid .figure img {
+  box-shadow: var(--shadow-soft);
+}
+
+.step-list {
+  counter-reset: steps;
+  list-style: none;
+  margin: 1.2rem 0;
+  padding: 0;
+}
+
+.step-list li {
+  border-top: 1px solid var(--line);
+  counter-increment: steps;
+  padding: 0.9rem 0 0.9rem 2.7rem;
+  position: relative;
+}
+
+.step-list li::before {
+  align-items: center;
+  background: var(--deep);
+  border-radius: 999px;
+  color: #ffffff;
+  content: counter(steps);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  height: 1.7rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0.86rem;
+  width: 1.7rem;
+}
+
 .source-list {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -627,7 +733,10 @@ img {
   .two-column,
   .program-grid,
   .project-card,
-  .contact-grid {
+  .contact-grid,
+  .stat-grid,
+  .figure-grid,
+  .fit-grid {
     grid-template-columns: 1fr;
   }
 

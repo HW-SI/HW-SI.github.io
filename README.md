@@ -10,6 +10,7 @@ The public website is intentionally small:
 
 - `index.html` - home page, full-width hero, current research feature, sidebar links, and contact
 - `news/index.html` - selected research notes, group-style writing, and short updates
+- `news/v4641-sgr-nac-2026/index.html` - NAC 2026 V4641 Sgr research note and poster companion
 - `news/cosmic-rays-coffee/index.html` - group writing post: "Could Cosmic Rays Power My Coffee Machine?"
 - `research/index.html` - current and previous research project descriptions
 - `blog/index.html` and `blog/cosmic-rays-coffee/index.html` - redirects to News for old blog-style links
@@ -38,6 +39,7 @@ Current pages use original schematic artwork in `images/` for the homepage, rese
 - `microquasar-smbh-comparison.png`
 - `blog-research-notes-header.png`
 - `blog-coffee.png`
+- `v4641-nac-2026/` - V4641 Sgr web companion figures copied from the NAC 2026 materials folder
 
 See `FIGURE_PROMPTS.md` for the prompts and quality criteria used to generate or refine these figures.
 
